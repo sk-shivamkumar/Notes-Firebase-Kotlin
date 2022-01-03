@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blacknote"
+    tools:context=".HomeActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:backgroundTint="@color/lesswhitenote"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/addnote"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/todo"
+        android:focusable="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_searchView" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/rv_searchView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/loginbtndesign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/load_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/psbold"
+        android:text="Create note"
+        android:textColor="@color/yellonote"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_add_note"
+        app:layout_constraintEnd_toStartOf="@+id/fab_add_note"
+        app:layout_constraintTop_toTopOf="@+id/fab_add_note" />
+
+    <ProgressBar
+        android:id="@+id/pbload"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTintMode="add"
+        android:indeterminateTint="@color/yellonote"
+        android:indeterminateTintMode="src_atop"
+        app:layout_constraintTop_toBottomOf="@+id/rv_searchView" />
+
+    <TextView
+        android:id="@+id/tv_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/psregular"
+        android:gravity="center"
+        android:text="Make sure that you are connected\nto the internet"
+        android:textColor="@color/yellonote"
+        app:layout_constraintEnd_toEndOf="@+id/pbload"
+        app:layout_constraintStart_toStartOf="@+id/pbload"
+        app:layout_constraintTop_toBottomOf="@+id/pbload" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="default_web_client_id_auth" >150955715282-d0o813katclo26o5aurrrka0fs734km8.apps.googleusercontent.com</string>
+    <string name="todo">TODO</string>
+</resources>
