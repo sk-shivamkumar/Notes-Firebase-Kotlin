@@ -26,6 +26,7 @@ Firebase Authentication with Google
 Firebase Realtime Database to store notes
 
 
+
 Images:- 
 
 Splash Screen
