@@ -2,7 +2,7 @@
 Note taking application using Kotlin and Firebase Realtime Database.
 
 Features:-
-1.Signup With Google\n
+1.Signup With Google
 2.Create Note
 3.Update Note
 4.Delete Note
