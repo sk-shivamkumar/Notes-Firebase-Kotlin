@@ -2,6 +2,7 @@
 Note taking application using Kotlin and Firebase Realtime Database.
 
 Features:-
+
 1.Signup With Google
 
 2.Create Note
@@ -19,5 +20,7 @@ Features:-
 8.Default Dark Theme
 
 Database:-
+
 Firebase Authentication with Google
+
 Firebase Realtime Database to store notes
